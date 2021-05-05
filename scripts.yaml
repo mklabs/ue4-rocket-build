@@ -1,0 +1,10 @@
+allow:
+  - env
+  - read
+  - run
+
+scripts:
+  fmt: deno fmt rocket_build.js
+  test: 
+    cmd: rocket_build.js -U ..\..\..\Users\danie\OneDrive\Bureau\Plugins\GASCompanion\4.26\GASCompanion\GASCompanion.uplugin
+    unstable: true
