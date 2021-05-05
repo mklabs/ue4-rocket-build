@@ -33,4 +33,4 @@ Create a `$HOME/.ue4-rocket-build/config.json` file with the following content (
 
 Then run
 
-        deno rocket_build.js -U [Path to .uplugin file]
+        deno run --unstable --allow-env --allow-read --allow-run rocket_build.js -U [Path to .uplugin file]
