@@ -51,14 +51,14 @@ const args = parse(Deno.args, {
   "--": true,
 });
 
-if (args.help) {
+if (args.help || !args.uplugin) {
   console.log(`
   ue4-rocket-build: Rocket build system for UE4 Plugins
 
   Usage: ue4rb -U [Path to .uplugin file]
 
   Options:
-  
+
     -h, --help                     Prints help information
     -U, --uplugin <path>           Path to .uplugin file
   `);
@@ -66,7 +66,7 @@ if (args.help) {
 }
 
 if (
-  !args.uplugin || !args.uplugin.endsWith(".uplugin") ||
+  !args.uplugin.endsWith(".uplugin") ||
   !await exists(path.resolve(args.uplugin))
 ) {
   console.error(`ERROR: Invalid plugin file ${args.uplugin}`);
