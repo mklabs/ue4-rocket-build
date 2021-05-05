@@ -21,9 +21,9 @@ Create a `$HOME/.ue4-rocket-build/config.json` file with the following content (
 	},
 	
 	"staging_paths": {
-		"4.24" : "C:/Users/danie/OneDrive/Bureau/Plugins/build_system/ue4/builds/4.24",
-		"4.25" : "C:/Users/danie/OneDrive/Bureau/Plugins/build_system/ue4/builds/4.25",
-		"4.26" : "C:/Users/danie/OneDrive/Bureau/Plugins/build_system/ue4/builds/4.26"
+		"4.24" : "C:/dev/ue/Plugins/4.24",
+		"4.25" : "C:/dev/ue/Plugins/4.25",
+		"4.26" : "C:/dev/ue/Plugins/4.26"
 	}	
 }
 ```
