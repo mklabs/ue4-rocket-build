@@ -8,6 +8,10 @@ Loosely based on https://github.com/coderespawn/ue4-plugin-build-system
 
 WIP
 
+## Install
+
+    deno install --unstable --allow-env --allow-read --allow-run -n ue4rb https://raw.githubusercontent.com/mklabs/ue4-rocket-build/master/rocket_build.js
+
 ## Usage
 
 Create a `$HOME/.ue4-rocket-build/config.json` file with the following content (update values to match your setup):
@@ -33,4 +37,5 @@ Create a `$HOME/.ue4-rocket-build/config.json` file with the following content (
 
 Then run
 
-        deno run --unstable --allow-env --allow-read --allow-run rocket_build.js -U [Path to .uplugin file]
+    ue4rb -U [Path to .uplugin file]
+    
